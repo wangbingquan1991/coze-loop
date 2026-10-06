@@ -235,7 +235,7 @@ export function apply(ctx, rawConfig = {}) {
     input: { hint: 'optional service name, e.g. app or nginx' },
     handler: async ({ rawInput = '' }) => {
       try {
-        const service = String(rawInput).trim().split(/\\s+/)[0] || ''
+        const service = String(rawInput).trim().split(/\s+/)[0] || ''
         const output = await manager.logs(service)
         return { kind: 'success', text: output }
       } catch (error) {
