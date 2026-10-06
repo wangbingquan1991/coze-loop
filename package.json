@@ -13,6 +13,7 @@
     "dsh",
     "cordis.patch.yml",
     "release/deployment/docker-compose",
+    "release/deployment/docker-compose/.env",
     "DSH_PLUGIN.md"
   ],
   "engines": {
