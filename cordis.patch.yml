@@ -1,0 +1,6 @@
+# DSH bundle activation layer.
+# Installing this repository with `dsh plugin add` mounts the lifecycle
+# controller below. Coze Loop itself keeps running in Docker Compose.
+- insert:
+    - id: coze-loop
+      name: dsh-coze-loop
