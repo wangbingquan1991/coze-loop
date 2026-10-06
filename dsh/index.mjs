@@ -129,7 +129,7 @@ function createManager(rawConfig = {}) {
   async function status() {
     const result = await compose(['ps', '--all'])
     const output = result.stdout || result.stderr || 'No Compose status output.'
-    return output + '\\n\\nWeb: ' + getWebUrl(config) + '\\nRuntime: ' + runtimeDir
+    return output + '\n\nWeb: ' + getWebUrl(config) + '\nRuntime: ' + runtimeDir
   }
 
   async function start(options = {}) {
