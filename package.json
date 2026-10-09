@@ -1,0 +1,39 @@
+{
+  "name": "dsh-coze-loop",
+  "version": "0.1.0",
+  "private": false,
+  "description": "DeepSeek Harness (DSH) bundle adapter for Coze Loop.",
+  "main": "./dsh/index.mjs",
+  "exports": {
+    ".": "./dsh/index.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dsh",
+    "cordis.patch.yml",
+    "release/deployment/docker-compose",
+    "release/deployment/docker-compose/.env",
+    "DSH_PLUGIN.md"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangbingquan1991/coze-loop.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "coze-loop",
+    "docker-compose"
+  ]
+}
